@@ -1,3 +1,4 @@
+/* Normalize css code */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -40,4 +41,25 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+body{
+    margin: 24px;
+}
+/* Navbar styles */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navMenu {
+  padding: 10px 12px;
+  text-decoration: none;
+  font-family: 'Inter',sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  color: #344563;
 }
