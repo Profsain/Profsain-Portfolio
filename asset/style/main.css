@@ -158,6 +158,11 @@ nav {
   align-items: center;
 }
 
+.navMenu {
+  display: flex;
+  flex-direction: row;
+}
+
 .menuIcon {
   visibility: hidden;
 }
@@ -172,7 +177,7 @@ nav {
   }
 }
 
-.navMenu {
+.navLink {
   padding: 10px 12px;
   font-family:
 
