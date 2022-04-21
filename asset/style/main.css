@@ -43,8 +43,15 @@ table {
   border-spacing: 0;
 }
 
+/* My Style section  */
 body{
     margin: 24px;
+}
+
+header {
+  background-image: url(https://i.postimg.cc/rmSQD83K/headerbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* Navbar styles */
 nav {
@@ -55,11 +62,60 @@ nav {
 
 .navMenu {
   padding: 10px 12px;
-  text-decoration: none;
   font-family: 'Inter',sans-serif;
+  text-decoration: none;
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
   text-align: center;
   color: #344563;
+}
+
+/* Home section style */
+#homeSection {
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh; */
+  justify-content: center;
+  align-items: center;
+  padding: 160px;
+}
+
+.headerTitle {
+  font-family: 'Inter',sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  font-style: normal;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.37px;
+  color: #172B4D;
+}
+
+.greenText {
+  margin-bottom: 24px;
+  color: #36B37E;
+}
+
+.headerText {
+  margin: 24px 48px;
+  padding: 0px 24px;
+  font-family: 'Inter',sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 32px;
+  text-align: center;
+  color: #172B4D;
+
+}
+
+.socialButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.iconsBtn {
+  padding: 24px;
 }
