@@ -192,7 +192,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 160px 0px;
+  padding: 160px 0;
   background-image: url(https://i.postimg.cc/rmSQD83K/headerbg.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -231,7 +231,7 @@ nav {
   color: #172b4d;
 }
 
-.socialButton > ul{
+.socialButton > ul {
   display: flex;
   flex-direction: row;
   align-items: center;
