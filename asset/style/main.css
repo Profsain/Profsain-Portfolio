@@ -130,6 +130,11 @@ table {
 }
 
 /* My Style section  */
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 header {
   background-image: url(https://i.postimg.cc/rmSQD83K/headerbg.png);
   background-repeat: no-repeat;
@@ -165,16 +170,6 @@ nav {
 
 .menuIcon {
   visibility: hidden;
-}
-
-@media only screen and (max-width: 600px) {
-  .menuIcon {
-    visibility: visible;
-  }
-
-  .menu {
-    visibility: hidden;
-  }
 }
 
 .navLink {
@@ -244,4 +239,121 @@ nav {
 
 .socialButton > ul > li {
   padding: 24px;
+}
+
+/* portfolio section style */
+#portfolioSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.sectionTitle {
+  font-family:
+  
+    'Inter',
+    sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 52px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+}
+
+.recentWorks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+  grid-gap: 20px;
+  padding: 80px 0;
+  width: 80%;
+}
+
+.worksCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+}
+
+.cardImage {
+  width: 100%;
+  height: 240px;
+}
+
+.projectTitle {
+  padding: 12px 0;
+  font-family:
+  
+    'Poppins',
+    sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.projectLang {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.langText {
+  margin: 0 4px;
+  padding: 8px;
+  background-color: #ebf0ee;
+  border-radius: 4px;
+  font-family:
+  
+    'Inter',
+    sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 16px;
+}
+
+.seeProjectBtn {
+  margin: 18px 0;
+  width: 122px;
+  height: 48px;
+  text-align: center;
+  background-color: #36b37f;
+  border: none;
+  border-radius: 4px;
+  font-family:
+  
+    'Poppins',
+    sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 3%;
+  color: #ffffff;
+
+}
+
+/* media query style */
+@media only screen and (max-width: 600px) {
+  .menuIcon {
+    visibility: visible;
+  }
+
+  .menu {
+    visibility: hidden;
+  }
+
+  .recentWorks {
+    grid-template-columns: auto;
+  }
 }
