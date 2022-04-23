@@ -135,19 +135,17 @@ table {
   flex-direction: column;
   justify-content: center;
 }
-header {
-  background-image: url(https://i.postimg.cc/rmSQD83K/headerbg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 /* Navbar styles */
 .header {
-  margin: 24px;
+  padding: 24px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-content: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
 }
 
 .logo > img {
@@ -170,6 +168,7 @@ nav {
 
 .menuIcon {
   visibility: hidden;
+  margin-right: 24px;
 }
 
 .navLink {
@@ -242,7 +241,7 @@ nav {
 }
 
 /* portfolio section style */
-#portfolioSection {
+.innerSection {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -264,7 +263,7 @@ nav {
   color: #172b4d;
 }
 
-.recentWorks {
+.sectionGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-columns: auto;
@@ -274,7 +273,7 @@ nav {
   width: 80%;
 }
 
-.worksCard {
+.sectionCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -288,7 +287,7 @@ nav {
   height: 240px;
 }
 
-.projectTitle {
+.sectionCardTitle {
   padding: 12px 0;
   font-family:
   
@@ -301,14 +300,16 @@ nav {
   color: #172b4d;
 }
 
-.projectLang {
+.cardTags {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 16px;
   justify-content: center;
   align-items: center;
 }
 
-.langText {
+.tagText {
   margin: 0 4px;
   padding: 8px;
   background-color: #ebf0ee;
@@ -323,9 +324,9 @@ nav {
   line-height: 16px;
 }
 
-.seeProjectBtn {
+.sectionBtn {
   margin: 18px 0;
-  width: 122px;
+  width: auto;
   height: 48px;
   text-align: center;
   background-color: #36b37f;
@@ -343,6 +344,38 @@ nav {
 
 }
 
+/* about me section style */
+.aboutMeText {
+  padding: 24px 90px;
+  font-family:
+  
+    'Poppins',
+    sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+}
+
+.aboutCard {
+  padding-bottom: 48px;
+  background-color: #ebf0ee;
+}
+
+.iconHolder {
+  margin: 28px 0;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.aboutTags {
+  background-color: #ffffff;
+  color: #36b37e;
+}
+
 /* media query style */
 @media only screen and (max-width: 600px) {
   .menuIcon {
@@ -353,7 +386,7 @@ nav {
     visibility: hidden;
   }
 
-  .recentWorks {
+  .sectionGrid {
     grid-template-columns: auto;
   }
 }
