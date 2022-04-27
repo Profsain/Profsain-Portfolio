@@ -393,20 +393,6 @@ nav {
 }
 
 /* Contact section css */
-.introText {
-  padding: 24px 15%;
-  font-family:
-  
-    'Inter',
-    sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  color: #172b4d;
-  text-align: center;
-}
-
 form {
   display: flex;
   flex-direction: column;
@@ -423,7 +409,7 @@ input {
 }
 
 textarea {
-  border: 1px solid #60C095;
+  border: 1px solid #60c095;
   box-sizing: border-box;
   border-radius: 4px;
   width: 327px;
