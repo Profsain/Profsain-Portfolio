@@ -19,7 +19,11 @@ GitHub: @profsain
 Twitter: @profsain
 LinkedIn: https://linkedin.com/in/profsain
 
-## Contributing
+## Contributing Members
+<ul>
+<li><a href="https://github.com/vaderonline">@Github:&nbsp; Vishal Kumar</a></li>
+<li><a href="https://github.com/assadounto">@Github:&nbsp; Richmond Adu-Kyere</a></li>
+</ul>
 
 All contribution are welcome. Just make a pull request
 
