@@ -120,7 +120,7 @@ blockquote::before,
 blockquote::after,
 q::before,
 q::after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -130,7 +130,7 @@ table {
 }
 
 /* My Style section  */
-.mainPage {
+.main-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -161,21 +161,21 @@ nav {
   align-items: center;
 }
 
-.navMenu {
+.nav-menu {
   display: flex;
   flex-direction: row;
 }
 
-.menuIcon {
+.menu-icon {
   visibility: hidden;
   margin-right: 24px;
 }
 
-.navLink {
+.nav-link {
   padding: 10px 12px;
   font-family:
 
-    'Inter',
+    Inter,
     sans-serif;
   text-decoration: none;
   font-weight: 600;
@@ -186,22 +186,22 @@ nav {
 }
 
 /* Home section style */
-#homeSection {
+#home-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 160px 0;
-  background-image: url(https://i.postimg.cc/rmSQD83K/headerbg.png);
+  background-image: url("https://i.postimg.cc/rmSQD83K/headerbg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.headerTitle {
+.header-title {
   font-family:
 
-    'Inter',
+    Inter,
     sans-serif;
   font-weight: 800;
   font-size: 48px;
@@ -212,15 +212,15 @@ nav {
   color: #172b4d;
 }
 
-.greenText {
+.green-text {
   margin-bottom: 24px;
   color: #36b37e;
 }
 
-.headerText {
+.header-text {
   padding: 0 15%;
   font-family:
-    'Inter',
+    Inter,
     sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -230,28 +230,28 @@ nav {
   color: #172b4d;
 }
 
-.socialButton > ul {
+.social-button > ul {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.socialButton > ul > li {
+.social-button > ul > li {
   padding: 24px;
 }
 
 /* portfolio section style */
-.innerSection {
+.inner-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 80px 0;
 }
 
-.sectionTitle {
+.section-title {
   font-family:
 
-    'Inter',
+    Inter,
     sans-serif;
   font-size: 40px;
   font-weight: 700;
@@ -263,7 +263,7 @@ nav {
   color: #172b4d;
 }
 
-.sectionGrid {
+.section-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-columns: auto;
@@ -273,7 +273,7 @@ nav {
   width: 80%;
 }
 
-.sectionCard {
+.section-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -282,16 +282,16 @@ nav {
   border-radius: 8px;
 }
 
-.cardImage {
+.card-image {
   width: 100%;
   height: 240px;
 }
 
-.sectionCardTitle {
+.section-card-title {
   padding: 12px 0;
   font-family:
 
-    'Poppins',
+    Poppins,
     sans-serif;
   font-style: normal;
   font-size: 24px;
@@ -300,23 +300,22 @@ nav {
   color: #172b4d;
 }
 
-.cardTags {
+.card-tags {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   row-gap: 16px;
   justify-content: center;
   align-items: center;
 }
 
-.tagText {
+.tag-text {
   margin: 0 4px;
   padding: 8px;
   background-color: #ebf0ee;
   border-radius: 4px;
   font-family:
 
-    'Inter',
+    Inter,
     sans-serif;
   font-size: 12px;
   font-weight: 600;
@@ -324,7 +323,7 @@ nav {
   line-height: 16px;
 }
 
-.sectionBtn {
+.section-btn {
   margin: 18px 0;
   width: auto;
   height: 48px;
@@ -334,7 +333,7 @@ nav {
   border-radius: 4px;
   font-family:
 
-    'Poppins',
+    Poppins,
     sans-serif;
   font-size: 17px;
   font-weight: 500;
@@ -344,28 +343,28 @@ nav {
   transition: all 0.3s ease-in-out;
 }
 
-.sectionBtn:hover {
+.section-btn:hover {
   background-color: #36b37f;
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 0 8px 16px #36b47d;
   transform: scale(1.1);
 }
 
-.sectionBtn:focus {
+.section-btn:focus {
   background-color: #008552;
 }
 
 /* about me section style */
-#aboutSection {
-  background-image: url(https://i.postimg.cc/JndcP0NV/illustrationabout.png);
+#about-section {
+  background-image: url("https://i.postimg.cc/JndcP0NV/illustrationabout.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
 }
 
-.aboutMeText {
+.about-me-text {
   padding: 24px 15%;
   font-family:
-    'Poppins',
+    Poppins,
     sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -374,12 +373,12 @@ nav {
   color: #42526e;
 }
 
-.aboutCard {
+.about-card {
   padding-bottom: 48px;
   background-color: #ebf0ee;
 }
 
-.iconHolder {
+.icon-holder {
   margin: 28px 0;
   padding: 10px;
   border-radius: 50%;
@@ -387,7 +386,7 @@ nav {
   text-align: center;
 }
 
-.aboutTags {
+.about-tags {
   background-color: #fff;
   color: #36b37e;
 }
@@ -417,7 +416,7 @@ textarea {
 
 /* media query style */
 @media only screen and (max-width: 600px) {
-  .menuIcon {
+  .menu-icon {
     visibility: visible;
   }
 
@@ -425,7 +424,7 @@ textarea {
     visibility: hidden;
   }
 
-  .sectionGrid {
+  .section-grid {
     grid-template-columns: auto;
   }
 }
