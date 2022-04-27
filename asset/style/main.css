@@ -395,12 +395,15 @@ nav {
 /* Contact section style */
 .introText {
   padding: 24px 15%;
-  font-family: 'Inter';
+  font-family:
+  
+    'Inter',
+    sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #172B4D;
+  color: #172b4d;
   text-align: center;
 }
 
@@ -408,23 +411,22 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
 }
 
 input {
-  margin: 15px 0px;
+  margin: 15px 0;
   height: 48px;
   width: 327px;
-  border: 1px solid #60C095;
+  border: 1px solid #60c095;
   box-sizing: border-box;
   border-radius: 4px;
 }
 
 textarea {
-border: 1px solid #60C095;
-box-sizing: border-box;
-border-radius: 4px;
-width: 327px;
+  border: 1px solid #60C095;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 327px;
 }
 
 /* media query style */
