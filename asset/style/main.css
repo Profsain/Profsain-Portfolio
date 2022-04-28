@@ -361,7 +361,7 @@ nav {
   background-size: contain;
 }
 
-.about-me-text {
+.inner-section-text {
   padding: 24px 15%;
   font-family:
     Poppins,
@@ -392,6 +392,27 @@ nav {
 }
 
 /* contact section style */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-intro-text {
+  font-family:
+    Inter,
+    sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  padding: 0 15%;
+  margin: 24px 0;
+}
+
 form {
   display: flex;
   flex-direction: column;
