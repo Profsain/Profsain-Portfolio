@@ -185,7 +185,7 @@ table {
 }
 
 /* Home section style */
-#home-section {
+.home-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
