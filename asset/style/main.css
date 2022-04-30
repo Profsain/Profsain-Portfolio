@@ -446,10 +446,16 @@ textarea {
 }
 
 /* media query style */
+
 /* Tablet screen */
 @media only screen and (max-width: 1025px) {
-  .section-grid  {
+  .section-grid {
     grid-template-columns: repeat(2, 2fr);
+  }
+
+  input,
+  textarea {
+    width: 684px;
   }
 }
 
