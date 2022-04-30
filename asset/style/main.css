@@ -138,14 +138,13 @@ table {
 
 /* Navbar styles */
 .header {
-  padding: 24px;
+  padding: 8px;
   width: 100%;
   display: flex;
   flex-direction: row;
-  align-content: center;
-  justify-content: space-between;
   position: fixed;
   top: 0;
+  background-color: #fff;
 }
 
 .logo > img {
@@ -153,7 +152,7 @@ table {
   height: 60px;
 }
 
-nav {
+.nav-mobile {
   flex-grow: 2;
   display: flex;
   flex-direction: row;
@@ -172,7 +171,7 @@ nav {
 }
 
 .nav-link {
-  padding: 10px 12px;
+  padding: 10px 3em;
   font-family:
 
     Inter,
@@ -186,7 +185,7 @@ nav {
 }
 
 /* Home section style */
-#home-section {
+.home-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -301,8 +300,11 @@ nav {
 }
 
 .card-tags {
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   row-gap: 16px;
   justify-content: center;
   align-items: center;
@@ -435,17 +437,76 @@ textarea {
   width: 327px;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* media query style */
-@media only screen and (max-width: 600px) {
+
+/* Tablet screen */
+@media only screen and (max-width: 1025px) {
+  .section-grid {
+    grid-template-columns: repeat(2, 2fr);
+  }
+
+  input,
+  textarea {
+    width: 684px;
+  }
+}
+
+/* phone screen */
+@media only screen and (max-width: 768px) {
   .menu-icon {
     visibility: visible;
   }
 
-  .menu {
+  .nav-mobile {
     visibility: hidden;
   }
 
   .section-grid {
-    grid-template-columns: auto;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  input,
+  textarea {
+    width: 327px;
+  }
+}
+
+@media only screen and (min-width: 1021px) {
+  .form-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 1171px;
+    height: 490px;
+    left: 135px;
+  }
+
+  .contact-intro {
+    position: static;
+    width: 463px;
+    height: 256px;
+    left: 0;
+    top: 0;
+  }
+
+  .contact-intro-text {
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  input,
+  textarea {
+    width: 684px;
+  }
+
+  form {
+    align-items: flex-start;
   }
 }
