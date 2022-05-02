@@ -357,8 +357,9 @@ table {
 
 /* about me section style */
 .about-section {
-  background-image: url("https://i.postimg.cc/ZqztsZhk/illustration-about-me-2-desktop-2x.png"),
-  url("https://i.postimg.cc/X7W90jRj/illustration-about-me-1-desktop-2x.png");
+  background-image:
+    url("https://i.postimg.cc/ZqztsZhk/illustration-about-me-2-desktop-2x.png"),
+    url("https://i.postimg.cc/X7W90jRj/illustration-about-me-1-desktop-2x.png");
   background-repeat: no-repeat;
   background-position: left center, right top;
   background-size: 200px;
@@ -396,12 +397,14 @@ table {
 
 /* contact section style */
 .contact-section {
-  background-image: url("https://i.postimg.cc/RFX1Pj01/illustration-2-contact-form-desktop-2x.png"),
-  url("https://i.postimg.cc/qqNm2kG6/right-footerimg.png");
+  background-image:
+    url("https://i.postimg.cc/RFX1Pj01/illustration-2-contact-form-desktop-2x.png"),
+    url("https://i.postimg.cc/qqNm2kG6/right-footerimg.png");
   background-repeat: no-repeat;
   background-position: left bottom, right bottom;
   background-size: 200px;
 }
+
 .form-container {
   display: flex;
   flex-direction: column;
