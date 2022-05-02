@@ -12,6 +12,10 @@ Clone the repo to your local computer
 Open the project folder with any text editor of your choice
 Open index.html file in your browser to view the website
 
+## Live Preview
+Visit the link below to view my portfolio website.
+https://profsain.github.io/Profsain-Portfolio/
+
 ## Author
 
 Husseini Mudi (Profsain)
