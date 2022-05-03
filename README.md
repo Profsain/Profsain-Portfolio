@@ -14,14 +14,16 @@ Open index.html file in your browser to view the website
 
 ## Live Preview
 Visit the link below to view my portfolio website.
-https://profsain.github.io/Profsain-Portfolio/
+<a href="https://profsain.github.io/Profsain-Portfolio/">Profsain Porfolio</a>
 
 ## Author
 
-Husseini Mudi (Profsain)
-GitHub: @profsain
-Twitter: @profsain
-LinkedIn: https://linkedin.com/in/profsain
+<a href="https://profsain.github.io/Profsain-Portfolio">Husseini Mudi (Profsain)</a>
+<ul>
+  <li><a href="https://github.com/Profsain">Github</a></li>
+  <li><a href="https://twitter.com/profsain">Twitter</a></li>
+  <li><a href="https://linkedin.com/in/profsain">LinkedIn</a></li>
+</ul>
 
 ## Contributing Members
 <ul>
