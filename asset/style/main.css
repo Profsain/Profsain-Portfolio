@@ -161,16 +161,12 @@ header {
 nav {
   margin-left: 25%;
 }
+
 #nav-menu {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding-right: 25%;
-}
-
-#nav-menu li:hover {
-  transform: scale(1.5);
-  transition: 0.3s;
 }
 
 #mobile-container {
@@ -183,7 +179,9 @@ nav {
   cursor: pointer;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 35px;
   height: 5px;
   margin: 6px 0;
@@ -297,6 +295,12 @@ nav {
 
 .social-button > ul > li {
   padding: 24px;
+}
+
+
+#nav-menu li:hover {
+  transform: scale(1.5);
+  transition: 0.3s;
 }
 
 /* portfolio section style */
@@ -538,6 +542,7 @@ textarea {
   #hamburger-icon {
     display: block;
   }
+  
   .section-grid {
     grid-template-columns: repeat(1, 1fr);
   }

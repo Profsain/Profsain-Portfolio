@@ -1,12 +1,22 @@
-let mobileMobile = document.getElementsByClassName("mobile-menu");
-let hamburgar = document.getElementById("hamburger-icon");
-function toggleMobileMenu(bars) {
-    bars.classList.toggle("change");
-    mobileMobile[0].classList.toggle("open");
+const mobileMenu = document.querySelector('.mobile-menu');
+const hamburgar = document.getElementById('hamburger-icon');
+const navClose = document.querySelectorAll('.mobile-nav-link');
+const bars = document.querySelectorAll('.bars');
+
+console.log(mobileMenu)
+hamburgar.addEventListener('click', toggleMobileMenu);
+
+navClose.forEach(ele => {
+  ele.addEventListener('click', closeNav);
+});
+
+function toggleMobileMenu() {
+  console.log('Inside toggle')
+  mobileMenu.classList.toggle('open');
+  hamburgar.classList.toggle('change');
 }
 
-function closeNav(bars) {
-    hamburgar.classList.remove("change")
-    mobileMobile[0].classList.remove("open");
-    
+function closeNav() {
+  hamburgar.classList.remove("change");
+  mobileMenu.classList.remove("open");
 }
