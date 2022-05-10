@@ -16,25 +16,36 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@600&display=swap"
       rel="stylesheet"
     />
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Profsain Husseini</title>
   </head>
   <body>
-    <header class="header">
-      <a class="logo" href="#homeSection"
-        ><img src="asset/image/icons/profsainlogo.png" alt="brand logo"
-      /></a>
-      <div class="nav-mobile">
-        <ul class="nav-menu">
+    <header>
+      <div id="brand">
+        <a class="brand-img" href="#homeSection"
+          ><img src="asset/image/icons/profsainlogo.png" alt="brand logo"
+        /></a>
+      </div>
+      <nav>
+        <ul id="nav-menu">
           <li><a class="nav-link" href="#portfolioSection">Portfolio</a></li>
           <li><a class="nav-link" href="#aboutSection">About</a></li>
           <li><a class="nav-link" href="#contactSection">Contact</a></li>
         </ul>
-      </div>
-      <nav>
-        <a href="#" class="menu-icon"
-          ><img src="asset/image//icons/iconmenu.png" alt="icon menu"
-        /></a>
       </nav>
+      <div id="mobile-container">
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <ul class="mobile-menu">
+          <li><a class="nav-link" href="#portfolioSection" onclick="closeNav()">Portfolio</a></li>
+          <li><a class="nav-link" href="#aboutSection" onclick="closeNav()">About</a></li>
+          <li><a class="nav-link" href="#contactSection" onclick="closeNav()">Contact</a></li>
+        </ul>
+      </div>
     </header>
     <main class="main-page">
       <section id="homeSection" class="home-section">
@@ -252,6 +263,7 @@
           </li>
         </ul>
       </section>
+      
       <!-- contact me section -->
       <section class="inner-section contact-section" id="contactSection">
         <div class="form-container">
@@ -268,25 +280,25 @@
               method="post"
             >
               <label>
-              <input
-                type="text"
-                name="user_name"
-                id="user_name"
-                placeholder="Full name"
-                required
-                maxlength="30"
-              />
-            </label>
-            <label>
-              <input
-                type="email"
-                name="user_email"
-                id="user_email"
-                placeholder="Email address"
-                required
-              />
-            </label>
-            
+                <input
+                  type="text"
+                  name="user_name"
+                  id="user_name"
+                  placeholder="Full name"
+                  required
+                  maxlength="30"
+                />
+              </label>
+              <label>
+                <input
+                  type="email"
+                  name="user_email"
+                  id="user_email"
+                  placeholder="Email address"
+                  required
+                />
+              </label>
+
               <textarea
                 name="message"
                 id="message"
@@ -346,5 +358,7 @@
         </div>
       </section>
     </main>
+
+    <script src="asset/script/main.js"></script>
   </body>
 </html>
