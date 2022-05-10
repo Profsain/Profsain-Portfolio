@@ -213,11 +213,14 @@ nav {
   justify-content: flex-start;
   align-items: flex-start;
   position: absolute;
-  top: 70px;
   left: 0;
   height: 500px;
   width: 100%;
   background-color: #fff;
+}
+
+.closeBrand {
+  display: none;
 }
 
 .open > li {
