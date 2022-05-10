@@ -297,7 +297,6 @@ nav {
   padding: 24px;
 }
 
-
 #nav-menu li:hover {
   transform: scale(1.5);
   transition: 0.3s;
@@ -542,7 +541,7 @@ textarea {
   #hamburger-icon {
     display: block;
   }
-  
+
   .section-grid {
     grid-template-columns: repeat(1, 1fr);
   }
