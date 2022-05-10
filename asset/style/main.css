@@ -170,7 +170,7 @@ nav {
 }
 
 #mobile-container {
-  margin-left: 28vw;
+  padding-right: 4em;
 }
 
 #hamburger-icon {
@@ -536,6 +536,12 @@ textarea {
 @media only screen and (max-width: 768px) {
   #nav-menu {
     display: none;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   #hamburger-icon {
