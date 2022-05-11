@@ -1,0 +1,57 @@
+// Project Database
+const database = [
+  {
+    id: 123,
+    projectName: 'Multi-Post Stories Gain+Glory',
+    projectDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur ex id diam hendrerit venenatis. Proin porta porta libero porta maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur ex id diam hendrerit venenatis. Proin porta porta libero porta maximus',
+    featuredImage: 'https://i.postimg.cc/4y2wtcVR/snapshotportfolio.png',
+    technologies: ['Ruby on rails', 'SCSS', 'JavaScript', 'HTML'],
+    liveVersionUrl: 'https://profsain.github.io/Profsain-Portfolio/',
+    sourceCodeUrl: 'https://github.com/Profsain/Profsain-Portfolio',
+  },
+  {
+    id: 124,
+    projectName: 'Multi-Post Stories Gain+Glory',
+    projectDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur ex id diam hendrerit venenatis. Proin porta porta libero porta maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur ex id diam hendrerit venenatis. Proin porta porta libero porta maximus',
+    featuredImage: 'https://i.postimg.cc/BQqg4WcT/img-Placeholder.png',
+    technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'HTML', 'React', 'ReactRedux'],
+    liveVersionUrl: 'https://profsain.github.io/Profsain-Portfolio/',
+    sourceCodeUrl: 'https://github.com/Profsain/Profsain-Portfolio',
+  },
+  {
+    id: 125,
+    projectName: 'Multi-Post Stories Gain+Glory',
+    projectDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur ex id diam hendrerit venenatis. Proin porta porta libero porta maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur ex id diam hendrerit venenatis. Proin porta porta libero porta maximus',
+    featuredImage: 'https://i.postimg.cc/4y2wtcVR/snapshotportfolio.png',
+    technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'HTML'],
+    liveVersionUrl: 'https://profsain.github.io/Profsain-Portfolio/',
+    sourceCodeUrl: 'https://github.com/Profsain/Profsain-Portfolio',
+  },
+  {
+    id: 126,
+    projectName: 'Multi-Post Stories Gain+Glory',
+    projectDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur ex id diam hendrerit venenatis. Proin porta porta libero porta maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur ex id diam hendrerit venenatis. Proin porta porta libero porta maximus',
+    featuredImage: 'https://i.postimg.cc/4y2wtcVR/snapshotportfolio.png',
+    technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'HTML'],
+    liveVersionUrl: 'https://profsain.github.io/Profsain-Portfolio/',
+    sourceCodeUrl: 'https://github.com/Profsain/Profsain-Portfolio',
+  },
+  {
+    id: 127,
+    projectName: 'Multi-Post Stories Gain+Glory',
+    projectDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur ex id diam hendrerit venenatis. Proin porta porta libero porta maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur ex id diam hendrerit venenatis. Proin porta porta libero porta maximus',
+    featuredImage: 'https://i.postimg.cc/hPcvHYkw/tindog.png',
+    technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'HTML'],
+    liveVersionUrl: 'https://profsain.github.io/Profsain-Portfolio/',
+    sourceCodeUrl: 'https://github.com/Profsain/Profsain-Portfolio',
+  },
+  {
+    id: 128,
+    projectName: 'Multi-Post Stories Gain+Glory',
+    projectDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur ex id diam hendrerit venenatis. Proin porta porta libero porta maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur ex id diam hendrerit venenatis. Proin porta porta libero porta maximus',
+    featuredImage: 'https://i.postimg.cc/4y2wtcVR/snapshotportfolio.png',
+    technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'HTML'],
+    liveVersionUrl: 'https://profsain.github.io/Profsain-Portfolio/',
+    sourceCodeUrl: 'https://github.com/Profsain/Profsain-Portfolio',
+  }
+]
