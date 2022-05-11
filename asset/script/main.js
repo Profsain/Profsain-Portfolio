@@ -15,11 +15,11 @@ let seeSourceUrl = '';
 const buildModalBox = (projectId) => {
   let modalObj = {};
 
-  //filter object
+  // filter object
   for (let i = 0; i < projectDatabase.length; i += 1) {
     if (projectDatabase[i].id === projectId) {
-      modalObj = {...projectDatabase[i]};
-    };
+      modalObj = { ...projectDatabase[i] };
+    }
   }
 
   seeLiveUrl = modalObj.liveVersionUrl;
@@ -30,7 +30,7 @@ const buildModalBox = (projectId) => {
   const modalTitle = document.querySelector('.modal-title');
   const modalDetail = document.querySelector('.modal-details-text');
   const technologiesItems = document.createElement('ul');
-  technologiesItems.classList.add('card-tags');  
+  technologiesItems.classList.add('card-tags');
   modalImage.setAttribute('src', modalObj.featuredImage);
   modalTitle.innerText = modalObj.projectName;
   modalDetail.innerText = modalObj.projectDescription;
@@ -43,10 +43,6 @@ const buildModalBox = (projectId) => {
   });
 
   modalTechnologies.replaceChildren(technologiesItems);
-}
-
-window.onload = () => {
-  buildProjectCard();
 };
 
 // see project handler
@@ -88,19 +84,23 @@ const buildProjectCard = () => {
   });
 };
 
+window.onload = () => {
+  buildProjectCard();
+};
+
 // close modal box when user click anywhere outside the modal
 window.onclick = (event) => {
   if (event.target === modalBox) {
     modalBox.style.display = 'none';
     mainPage.style.display = 'block';
-  };
-}
+  }
+};
 
 // close modal box when user click X button
 const closeBoxModel = () => {
   modalBox.style.display = 'none';
   mainPage.style.display = 'block';
-}
+};
 const closeModal = document.querySelector('.close-modal');
 closeModal.addEventListener('click', closeBoxModel);
 
@@ -109,7 +109,7 @@ closeModal.addEventListener('click', closeBoxModel);
 const openLinkUrl = (link) => {
   window.open(link, '_blank');
   closeBoxModel();
-}
+};
 
 seeLive.addEventListener('click', () => {
   openLinkUrl(seeLiveUrl);
