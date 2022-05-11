@@ -159,22 +159,7 @@ table {
   border: 1px solid #ebecf0;
   border-radius: 8px;
   background-color: #fff;
-  box-shadow: 0px 48px 48px #c1c7d0;
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s;
-}
-
-/* Add animation to box modal */
-@-webkit-keyframes animatetop {
-  form {top: -400px; opacity: 0;}
-  to {top: 0; opacity: 1;}
-}
-
-@keyframes animatetop {
-  form {top: -400px; opacity: 0;}
-  to {top: 0; opacity: 1;}
+  box-shadow: 0 48px 48px #c1c7d0;
 }
 
 .close-modal {
