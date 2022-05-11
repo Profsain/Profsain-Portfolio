@@ -1,3 +1,4 @@
+const projectDatabase = database;
 const portfolioGrid = document.querySelector('.portfolio-grid');
 const mobileMenu = document.querySelector('.mobile-menu');
 const hamburgar = document.getElementById('hamburger-icon');
@@ -5,16 +6,25 @@ const navClose = document.querySelectorAll('.mobile-nav-link');
 const brand = document.querySelector('#brand');
 const seeLive = document.querySelector('#see-live');
 const seeSource = document.querySelector('#see-source');
+let seeLiveUrl = '';
+let seeSourceUrl = '';
 
-console.log(database)
+// see project handler
+const seeProjectBtnHandler = (event) => {
+  let id = parseInt(event.target.id);
+  buildModalBox(id);
+  mainPage.style.display = 'none';
+  modalBox.style.display = 'block';
+}
+
 // project card builder
 const buildProjectCard = () => {
-  database.forEach((data) => {
-    let sectionCard = document.createElement('div');
-    let featuredImg = document.createElement('img');
-    let projectTitle = document.createElement('h3');
-    let technologies = document.createElement('ul');
-    let projectBtn = document.createElement('button');
+  projectDatabase.forEach((data) => {
+    const sectionCard = document.createElement('div');
+    const featuredImg = document.createElement('img');
+    const projectTitle = document.createElement('h3');
+    const technologies = document.createElement('ul');
+    const projectBtn = document.createElement('button');
 
     sectionCard.classList.add('section-card');
     featuredImg.classList.add('card-image');
@@ -25,15 +35,14 @@ const buildProjectCard = () => {
     featuredImg.setAttribute('src', data.featuredImage);
     projectTitle.innerText = data.projectName;
     projectBtn.innerText = 'See Project';
-    projectBtn.setAttribute('id', data.id)
-    projectBtn.addEventListener('click', seeProjectBtnHandler)
-
+    projectBtn.setAttribute('id', data.id);
+    projectBtn.addEventListener('click', seeProjectBtnHandler);
     data.technologies.forEach((item) => {
-      let techItem = document.createElement('li');
+      const techItem = document.createElement('li');
       techItem.classList.add('tag-text');
       techItem.innerText = item;
       technologies.append(techItem);
-    })
+    });
 
     sectionCard.append(featuredImg, projectTitle, technologies, projectBtn);
     portfolioGrid.append(sectionCard);
@@ -41,21 +50,9 @@ const buildProjectCard = () => {
  
 };
 
-window.onload = () => {
-  buildProjectCard();
-};
-
 // open modal box
 const mainPage = document.querySelector('.main-page');
 const modalBox = document.querySelector('.modal-container');
-
-const seeProjectBtnHandler = (event) => {
-  let id = parseInt(event.target.id);
-  console.log(typeof(id));
-  buildModalBox(id);
-  mainPage.style.display = 'none';
-  modalBox.style.display = 'block';
-}
 
 // close modal box when user click anywhere outside the modal
 window.onclick = (event) => {
@@ -67,39 +64,41 @@ window.onclick = (event) => {
 
 // modal box details builder
 const buildModalBox = (projectId) => {
-  console.log(projectId)
   let modalObj = {};
 
   //filter object
-  for (let i = 0; i < database.length; i++) {
-    if (database[i].id == projectId) {
-      modalObj = {...database[i]}
+  for (let i = 0; i < projectDatabase.length; i++) {
+    if (projectDatabase[i].id === projectId) {
+      modalObj = {...projectDatabase[i]};
     }
   }
 
-  const modalContent = document.querySelector('.modal-content');
-  const modalTechnologies = document.querySelector('.modal-technologies')
+  seeLiveUrl = modalObj.liveVersionUrl;
+  seeSourceUrl = modalObj.sourceCodeUrl;
+
+  const modalTechnologies = document.querySelector('.modal-technologies');
   const modalImage = document.querySelector('.modal-image');
   const modalTitle = document.querySelector('.modal-title');
   const modalDetail = document.querySelector('.modal-details-text');
-  let technologiesItems = document.createElement('ul');
-
+  const technologiesItems = document.createElement('ul');
   technologiesItems.classList.add('card-tags');  
   modalImage.setAttribute('src', modalObj.featuredImage);
   modalTitle.innerText = modalObj.projectName;
   modalDetail.innerText = modalObj.projectDescription;
-  seeLive.setAttribute('href', modalObj.liveVersionUrl);
-  seeSource.setAttribute('href', modalObj.sourceCodeUrl)
 
   modalObj.technologies.forEach((elem) => {
-    let item = document.createElement('li');
+    const item = document.createElement('li');
     item.classList.add('tag-text');
     item.innerText = elem;
     technologiesItems.append(item);
   });
 
-  modalTechnologies.replaceChildren(technologiesItems)
+  modalTechnologies.replaceChildren(technologiesItems);
 }
+
+window.onload = () => {
+  buildProjectCard();
+};
 
 // close modal box when user click X button
 const closeBoxModel = () => {
@@ -110,8 +109,19 @@ const closeModal = document.querySelector('.close-modal');
 closeModal.addEventListener('click', closeBoxModel);
 
 // close modal box when user click on seeLive or seeSource btn
-seeLive.addEventListener('click', closeBoxModel);
-seeSource.addEventListener('click', closeBoxModel)
+// open link url
+const openLinkUrl = (link) => {
+  window.open(link, '_blank');
+  closeBoxModel();
+}
+
+seeLive.addEventListener('click', () => {
+  openLinkUrl(seeLiveUrl);
+});
+
+seeSource.addEventListener('click', () => {
+  openLinkUrl(seeSourceUrl);
+});
 
 // Open and close mobile menu bar
 const toggleMobileMenu = () => {

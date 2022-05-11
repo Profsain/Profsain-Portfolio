@@ -53,5 +53,5 @@ const database = [
     technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'HTML'],
     liveVersionUrl: 'https://profsain.github.io/Profsain-Portfolio/',
     sourceCodeUrl: 'https://github.com/Profsain/Profsain-Portfolio',
-  }
-]
+  },
+];
