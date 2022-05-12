@@ -138,7 +138,7 @@ navClose.forEach((elem) => {
   elem.addEventListener('click', closeNav);
 });
 
-// form validation 
+// form validation
 const form = document.querySelector('form');
 const emailField = form.elements.user_email;
 const userNameField = form.elements.user_name;
@@ -148,7 +148,7 @@ form.append(showMsgElem);
 
 // check email lowerCase validation
 const isEmailValid = (email) => {
-  const regex =  /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+  const regex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
   return regex.test(email);
 };
 
@@ -177,12 +177,11 @@ const clearField = () => {
   emailField.value = '';
   messageField.value = '';
 };
-
 form.addEventListener('submit', (event) => {
 
   // prevent form from default submit
   event.preventDefault();
-  let valid = checkEmail();
+  const valid = checkEmail();
   if (valid === false) {
     showErrorMsg();
   } else {
