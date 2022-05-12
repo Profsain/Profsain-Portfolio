@@ -51,7 +51,7 @@ const seeProjectBtnHandler = (event) => {
   buildModalBox(id);
   mainPage.style.display = 'none';
   modalBox.style.display = 'block';
-}
+};
 
 // project card builder
 const buildProjectCard = () => {
