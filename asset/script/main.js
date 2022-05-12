@@ -137,3 +137,56 @@ hamburgar.addEventListener('click', toggleMobileMenu);
 navClose.forEach((elem) => {
   elem.addEventListener('click', closeNav);
 });
+
+// form validation
+const form = document.querySelector('form');
+const emailField = form.elements.user_email;
+const userNameField = form.elements.user_name;
+const messageField = form.elements.message;
+const showMsgElem = document.createElement('p');
+form.append(showMsgElem);
+
+// check email lowerCase validation
+const isEmailValid = (email) => {
+  const regex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+  return regex.test(email);
+};
+
+// error message
+const showErrorMsg = () => {
+  const message = 'Email: Invalid characters. Capital letters not allowed';
+  showMsgElem.classList.add('errorMessage');
+  showMsgElem.innerText = message;
+};
+
+// success message on form submited
+const showSuccessMsg = () => {
+  const message = 'Form Submitted. Thank you for contacting me!';
+  showMsgElem.classList.add('successMessage');
+  showMsgElem.innerText = message;
+};
+
+const checkEmail = () => {
+  const email = emailField.value.trim();
+  return isEmailValid(email);
+};
+
+// clear form fiels
+const clearField = () => {
+  userNameField.value = '';
+  emailField.value = '';
+  messageField.value = '';
+};
+
+form.addEventListener('submit', (event) => {
+  // prevent form from default submit
+  event.preventDefault();
+  const valid = checkEmail();
+  if (valid === false) {
+    showErrorMsg();
+  } else {
+    showSuccessMsg();
+    form.submit();
+    clearField();
+  }
+});
