@@ -152,10 +152,10 @@ table {
 
 .modal-content {
   position: relative;
-  margin: 6em auto;
+  margin: 7em auto;
   padding: 24px;
   width: 80%;
-  height: auto;
+  height: 1083px;
   border: 1px solid #ebecf0;
   border-radius: 8px;
   background-color: #fff;
@@ -180,7 +180,6 @@ table {
 }
 
 .modal-title {
-  width: 589px;
   padding: 8px 54px;
   font-family:
 
@@ -627,6 +626,10 @@ textarea {
   textarea {
     width: 684px;
   }
+
+  .modal-content {
+    height: 894px;
+  }
 }
 
 /* phone screen */
@@ -652,6 +655,10 @@ textarea {
   input,
   textarea {
     width: 328px;
+  }
+
+  .modal-content {
+    height: 894px;
   }
 }
 
