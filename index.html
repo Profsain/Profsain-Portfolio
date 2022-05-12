@@ -98,109 +98,7 @@
         <h2 class="section-title">My Recent Works</h2>
 
         <!-- my recent works container -->
-        <div class="section-grid">
-          <div class="section-card">
-            <img
-              class="card-image"
-              src="asset/image/icons/imgPlaceholder.png"
-              alt="project image placeholder"
-            />
-            <h3 class="section-card-title">Multi-Post Stories Gain+Glory</h3>
-            <div>
-              <ul class="card-tags">
-                <li class="tag-text">Ruby on rails</li>
-                <li class="tag-text">CSS</li>
-                <li class="tag-text">JavaScript</li>
-                <li class="tag-text">HTML</li>
-              </ul>
-            </div>
-            <button class="section-btn" type="button">See Project</button>
-          </div>
-          <div class="section-card">
-            <img
-              class="card-image"
-              src="asset/image/icons/imgPlaceholder.png"
-              alt="project image placeholder"
-            />
-            <h3 class="section-card-title">Multi-Post Stories Gain+Glory</h3>
-            <div>
-              <ul class="card-tags">
-                <li class="tag-text">Ruby on rails</li>
-                <li class="tag-text">CSS</li>
-                <li class="tag-text">JavaScript</li>
-                <li class="tag-text">HTML</li>
-              </ul>
-            </div>
-            <button class="section-btn" type="button">See Project</button>
-          </div>
-          <div class="section-card">
-            <img
-              class="card-image"
-              src="asset/image/icons/imgPlaceholder.png"
-              alt="project image placeholder"
-            />
-            <h3 class="section-card-title">Multi-Post Stories Gain+Glory</h3>
-            <div>
-              <ul class="card-tags">
-                <li class="tag-text">Ruby on rails</li>
-                <li class="tag-text">CSS</li>
-                <li class="tag-text">JavaScript</li>
-                <li class="tag-text">HTML</li>
-              </ul>
-            </div>
-            <button class="section-btn" type="button">See Project</button>
-          </div>
-          <div class="section-card">
-            <img
-              class="card-image"
-              src="asset/image/icons/imgPlaceholder.png"
-              alt="project image placeholder"
-            />
-            <h3 class="section-card-title">Multi-Post Stories Gain+Glory</h3>
-            <div>
-              <ul class="card-tags">
-                <li class="tag-text">Ruby on rails</li>
-                <li class="tag-text">CSS</li>
-                <li class="tag-text">JavaScript</li>
-                <li class="tag-text">HTML</li>
-              </ul>
-            </div>
-            <button class="section-btn" type="button">See Project</button>
-          </div>
-          <div class="section-card">
-            <img
-              class="card-image"
-              src="asset/image/icons/imgPlaceholder.png"
-              alt="project image placeholder"
-            />
-            <h3 class="section-card-title">Multi-Post Stories Gain+Glory</h3>
-            <div>
-              <ul class="card-tags">
-                <li class="tag-text">Ruby on rails</li>
-                <li class="tag-text">CSS</li>
-                <li class="tag-text">JavaScript</li>
-                <li class="tag-text">HTML</li>
-              </ul>
-            </div>
-            <button class="section-btn" type="button">See Project</button>
-          </div>
-          <div class="section-card">
-            <img
-              class="card-image"
-              src="asset/image/icons/imgPlaceholder.png"
-              alt="project image placeholder"
-            />
-            <h3 class="section-card-title">Multi-Post Stories Gain+Glory</h3>
-            <div>
-              <ul class="card-tags">
-                <li class="tag-text">Ruby on rails</li>
-                <li class="tag-text">CSS</li>
-                <li class="tag-text">JavaScript</li>
-                <li class="tag-text">HTML</li>
-              </ul>
-            </div>
-            <button class="section-btn" type="button">See Project</button>
-          </div>
+        <div class="section-grid portfolio-grid">
         </div>
       </section>
 
@@ -358,7 +256,28 @@
         </div>
       </section>
     </main>
+      <!-- Project modal box -->
+      <div id="project-modal" class="modal-container">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p class="close-modal">&times;</p>
+          </div>
+          <div class="modal-body">
+            <img class="modal-image" src="#" alt="project snapshot">
+            <h3 class="modal-title">Project Title</h3>
+            <div class="modal-technologies" id="modal-tech-items">
+            </div>
+            <p class="modal-details-text"></p>
+            <div class="modal-button">
+              <button class="section-btn" id="see-live">See Live <span><img class="seeBtnIcons" src="asset/image/seelive.png" alt="see live icons"></span></button>
+              <div class="space"></div>
+             <button class="section-btn" id="see-source">See Source <span><img class="seeBtnIcons" src="asset/image/seesource.png" alt="see source icons"></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <script src="asset/script/database.js"></script>
     <script src="asset/script/main.js"></script>
   </body>
 </html>
