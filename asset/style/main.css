@@ -600,6 +600,39 @@ input {
   border-radius: 4px;
 }
 
+.erroInput {
+  margin: 15px 0;
+  height: 48px;
+  width: 327px;
+  border: 1px solid #e91f33;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.errorMessage {
+  font-family:
+    Inter,
+    sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  color: #e91f33;
+}
+
+.successMessage {
+  font-family:
+    Inter,
+    sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  color: #172b4d;
+}
+
 textarea {
   border: 1px solid #60c095;
   box-sizing: border-box;
