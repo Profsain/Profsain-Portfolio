@@ -177,8 +177,8 @@ const clearField = () => {
   emailField.value = '';
   messageField.value = '';
 };
-form.addEventListener('submit', (event) => {
 
+form.addEventListener('submit', (event) => {
   // prevent form from default submit
   event.preventDefault();
   const valid = checkEmail();
