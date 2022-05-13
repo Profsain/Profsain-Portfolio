@@ -195,7 +195,7 @@ const storeData = (obj) => {
 };
 
 // store form data in the localstorage
-const inputFieldHandler = (event) => {
+const inputFieldHandler = () => {
   const inputUserName = userNameField.value;
   const inputUserEmail = emailField.value;
   const inputUserMessage = messageField.value;
@@ -207,9 +207,9 @@ const inputFieldHandler = (event) => {
   };
   storeData(newObj);
 };
-userNameField.addEventListener('keypress', inputFieldHandler);
-emailField.addEventListener('keypress', inputFieldHandler);
-messageField.addEventListener('keypress', inputFieldHandler);
+userNameField.addEventListener('change', inputFieldHandler);
+emailField.addEventListener('change', inputFieldHandler);
+messageField.addEventListener('change', inputFieldHandler);
 
 // retrieve form data object from locastorage
 const getStoreData = () => {
