@@ -188,30 +188,29 @@ form.addEventListener('submit', (event) => {
   }
 });
 
+// store form data object in localstorage
+const storeData = (obj) => {
+  const jsonObj = JSON.stringify(obj);
+  localStorage.setItem('storedObj', jsonObj);
+};
+
 // store form data in the localstorage
 const inputFieldHandler = (event) => {
-  // update formObj property value
-  let inputUserName = userNameField.value;
-  let inputUserEmail = emailField.value;
-  let inputUserMessage = messageField.value;
+  const inputUserName = userNameField.value;
+  const inputUserEmail = emailField.value;
+  const inputUserMessage = messageField.value;
+  // form object
   const newObj = {
     name: inputUserName,
     email: inputUserEmail,
     message: inputUserMessage,
-  }
+  };
   storeData(newObj);
-  console.log(newObj);
 };
-
 userNameField.addEventListener('keypress', inputFieldHandler);
 emailField.addEventListener('keypress', inputFieldHandler);
 messageField.addEventListener('keypress', inputFieldHandler);
 
-// store form data object in localstorage
-const storeData = (obj) => {
-  const jsonObj = JSON.stringify(obj);
-  localStorage.setItem('storedObj', jsonObj)
-};
 // retrieve form data object from locastorage
 const getStoreData = () => {
   const retrievedData = localStorage.getItem('storedObj');
@@ -221,8 +220,8 @@ const getStoreData = () => {
     userNameField.value = formData.name;
     emailField.value = formData.email;
     messageField.value = formData.message;
-  };
-}
+  }
+};
 
 window.onload = () => {
   buildProjectCard();
