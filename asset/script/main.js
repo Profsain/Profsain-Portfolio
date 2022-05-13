@@ -84,10 +84,6 @@ const buildProjectCard = () => {
   });
 };
 
-window.onload = () => {
-  buildProjectCard();
-};
-
 // close modal box when user click anywhere outside the modal
 window.onclick = (event) => {
   if (event.target === modalBox) {
@@ -188,5 +184,46 @@ form.addEventListener('submit', (event) => {
     showSuccessMsg();
     form.submit();
     clearField();
+    localStorage.removeItem('storedObj');
   }
 });
+
+// store form data object in localstorage
+const storeData = (obj) => {
+  const jsonObj = JSON.stringify(obj);
+  localStorage.setItem('storedObj', jsonObj);
+};
+
+// store form data in the localstorage
+const inputFieldHandler = () => {
+  const inputUserName = userNameField.value;
+  const inputUserEmail = emailField.value;
+  const inputUserMessage = messageField.value;
+  // form object
+  const newObj = {
+    name: inputUserName,
+    email: inputUserEmail,
+    message: inputUserMessage,
+  };
+  storeData(newObj);
+};
+userNameField.addEventListener('change', inputFieldHandler);
+emailField.addEventListener('change', inputFieldHandler);
+messageField.addEventListener('change', inputFieldHandler);
+
+// retrieve form data object from locastorage
+const getStoreData = () => {
+  const retrievedData = localStorage.getItem('storedObj');
+  if (retrievedData !== null) {
+    // convert json string to javascript object
+    const formData = JSON.parse(retrievedData);
+    userNameField.value = formData.name;
+    emailField.value = formData.email;
+    messageField.value = formData.message;
+  }
+};
+
+window.onload = () => {
+  buildProjectCard();
+  getStoreData();
+};
