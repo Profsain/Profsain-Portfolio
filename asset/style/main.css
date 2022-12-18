@@ -1,139 +1,29 @@
-/* Normalize css code */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote::before,
-blockquote::after,
-q::before,
-q::after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
 
 /* My Style section  */
 .main-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.primary-text {
+  font-family:
+
+    Inter,
+    sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.call-me {
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #2a8e65;
+  padding: 10px 16px;
+  border-radius: 5px;
 }
 
 /* portfolio modal style */
@@ -181,13 +71,8 @@ table {
 
 .modal-title {
   padding: 8px 54px;
-  font-family:
-
-    Inter,
-    sans-serif;
   font-size: 32px;
   font-weight: 700;
-  font-style: normal;
   line-height: 44px;
   color: #172b4d;
 }
@@ -200,11 +85,6 @@ table {
 
 .modal-details-text {
   padding-left: 54px;
-  font-family:
-
-    Inter,
-    sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
@@ -352,13 +232,8 @@ nav {
 }
 
 .header-title {
-  font-family:
-
-    Inter,
-    sans-serif;
   font-weight: 800;
   font-size: 48px;
-  font-style: normal;
   line-height: 60px;
   text-align: center;
   letter-spacing: 0.37px;
@@ -372,12 +247,8 @@ nav {
 
 .header-text {
   padding: 0 15%;
-  font-family:
-    Inter,
-    sans-serif;
-  font-size: 20px;
   font-weight: 400;
-  font-style: normal;
+  font-size: 20px;
   line-height: 32px;
   text-align: center;
   color: #172b4d;
@@ -407,13 +278,8 @@ nav {
 }
 
 .section-title {
-  font-family:
-
-    Inter,
-    sans-serif;
   font-size: 40px;
   font-weight: 700;
-  font-style: normal;
   line-height: 52px;
   text-align: center;
   display: flex;
@@ -478,9 +344,9 @@ nav {
 
     Inter,
     sans-serif;
-  font-size: 12px;
-  font-weight: bold;
   font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
   line-height: 16px;
 }
 
@@ -505,6 +371,7 @@ nav {
 }
 
 .section-btn:hover {
+  cursor: pointer;
   background-color: #36b37f;
   box-shadow: 0 8px 16px #36b47d;
   transform: scale(1.1);
@@ -524,7 +391,7 @@ nav {
   background-size: 200px;
 }
 
-.inner-section-text {
+.p-text {
   padding: 24px 15%;
   font-family:
     Poppins,
@@ -572,10 +439,6 @@ nav {
 }
 
 .contact-intro-text {
-  font-family:
-    Inter,
-    sans-serif;
-  font-style: normal;
   font-weight: 900;
   font-size: 40px;
   line-height: 52px;
@@ -610,11 +473,6 @@ input {
 }
 
 .errorMessage {
-  font-family:
-    Inter,
-    sans-serif;
-  font-style: normal;
-  font-weight: 300;
   font-size: 16px;
   line-height: 32px;
   text-align: center;
@@ -622,11 +480,6 @@ input {
 }
 
 .successMessage {
-  font-family:
-    Inter,
-    sans-serif;
-  font-style: normal;
-  font-weight: 300;
   font-size: 16px;
   line-height: 32px;
   text-align: center;
@@ -645,6 +498,7 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 /* media query style */
