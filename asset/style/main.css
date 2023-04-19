@@ -260,13 +260,22 @@ nav {
   align-items: center;
 }
 
-.social-button > ul > li {
+.socialBtn {
   padding: 24px;
 }
 
+.socialBtn:hover {
+  /* transform: scale(1.1);
+  transition: 0.3s; */
+  padding: 10px;
+  border-radius: 25%;
+  background-color: #67ffc5;
+}
+
 #nav-menu li:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
   transition: 0.3s;
+  
 }
 
 /* portfolio section style */
@@ -370,7 +379,8 @@ nav {
   transition: all 0.3s ease-in-out;
 }
 
-.section-btn:hover {
+.section-btn:hover,
+.call-me:hover {
   cursor: pointer;
   background-color: #36b37f;
   box-shadow: 0 8px 16px #36b47d;
