@@ -1,6 +1,15 @@
 // Project Database
 const database = [
   {
+    id: 124,
+    projectName: 'Luxury Car Rental App',
+    projectDescription: 'A Car Rental App that allows users to reserve a car, add a new car or delete an existing one. This is a collaborative project built with Ruby on Rails, React, Redux, and PostgreSQL. I built the Car List page, Car details page and backend API controller.',
+    featuredImage: 'https://i.ibb.co/Rcc7WM4/cardemo.png',
+    technologies: ['Ruby on rails', 'React', 'Redux', 'PostgreSQL'],
+    liveVersionUrl: 'https://car-rental-front-end.onrender.com/',
+    sourceCodeUrl: 'https://github.com/Profsain/Car-Rental-Front-End',
+  },
+  {
     id: 123,
     projectName: 'SpendTrac Mobile Web App',
     projectDescription: 'SpendTrac is a Ruby on Rails mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
@@ -8,15 +17,6 @@ const database = [
     technologies: ['Ruby on rails', 'Ruby', 'PostgreSQL', 'Bootstrap', 'ERB', 'HTML'],
     liveVersionUrl: 'https://salty-hamlet-02593.herokuapp.com/',
     sourceCodeUrl: 'https://github.com/Profsain/spendtrac',
-  },
-  {
-    id: 124,
-    projectName: 'Aplhablog',
-    projectDescription: 'A Ruby on Rails application for creating new blog post, viewing posts, edit post, delete posts',
-    featuredImage: 'https://i.postimg.cc/JnZvqbNJ/alphablog.jpg',
-    technologies: ['Ruby on rails', 'Ruby', 'PostgreSQL', 'HTML', 'Bootstrap', 'ReactRedux'],
-    liveVersionUrl: 'https://alpha-blog-app.herokuapp.com/',
-    sourceCodeUrl: 'https://github.com/Profsain/alphablog',
   },
   {
     id: 125,
