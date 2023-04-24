@@ -1,5 +1,9 @@
 
 /* My Style section  */
+html {
+  scroll-behavior: smooth;
+}
+
 .main-page {
   display: flex;
   flex-direction: column;
@@ -15,6 +19,12 @@
   font-weight: 300;
 }
 
+.cta-container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
 .call-me {
   font-size: 14px;
   font-weight: 900;
@@ -24,6 +34,19 @@
   background-color: #2a8e65;
   padding: 10px 16px;
   border-radius: 5px;
+}
+
+.contact-btn {
+  background-color: #fff;
+  color: #2a8e65;
+  border: 1px solid #2a8e65;
+  margin-left: 28px;
+}
+
+.contact-btn:hover {
+  background-color: #26825b;
+  color: #fff;
+  border: none;
 }
 
 /* portfolio modal style */
@@ -233,7 +256,7 @@ nav {
 
 .header-title {
   font-weight: 800;
-  font-size: 48px;
+  font-size: 42px;
   line-height: 60px;
   text-align: center;
   letter-spacing: 0.37px;
@@ -260,13 +283,22 @@ nav {
   align-items: center;
 }
 
-.social-button > ul > li {
+.socialBtn {
   padding: 24px;
 }
 
+.socialBtn:hover {
+  /* transform: scale(1.1);
+  transition: 0.3s; */
+  padding: 10px;
+  border-radius: 25%;
+  background-color: #67ffc5;
+}
+
 #nav-menu li:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
   transition: 0.3s;
+  
 }
 
 /* portfolio section style */
@@ -289,12 +321,16 @@ nav {
 
 .section-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-auto-columns: auto;
   grid-auto-rows: auto;
-  grid-gap: 20px;
+  grid-gap: 40px;
   padding: 80px 0;
-  width: 80%;
+  width: 70%;
+}
+
+.skill-grid {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .section-card {
@@ -302,8 +338,15 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #d0d9d4;
+  padding: 14px;
   border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.section-card:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card-image {
@@ -370,7 +413,8 @@ nav {
   transition: all 0.3s ease-in-out;
 }
 
-.section-btn:hover {
+.section-btn:hover,
+.call-me:hover {
   cursor: pointer;
   background-color: #36b37f;
   box-shadow: 0 8px 16px #36b47d;
@@ -396,8 +440,8 @@ nav {
   font-family:
     Poppins,
     sans-serif;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 18px;
+  /* font-weight: 400; */
   line-height: 32px;
   text-align: center;
   color: #42526e;

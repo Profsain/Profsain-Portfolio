@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="asset/image/icons/fav-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="asset/style/normalize.css" />
     <link rel="stylesheet" href="asset/style/main.css" />
+    <!-- Bootstrap 5 style -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -52,44 +55,41 @@
     </header>
     <main class="main-page">
       <section id="homeSection" class="home-section">
-        <h1 class="header-title primary-text">Hey there. I&apos;m Profsain.</h1>
-        <h2 class="header-title primary-text green-text">I&apos;m a software developer</h2>
+        <h1 class="header-title primary-text">Hey there. I&apos;m Husseini Mudi</h1>
+        <h2 class="header-title primary-text green-text">A Full-stack Web Developer</h2>
         <p class="header-text primary-text">
-          Do you need help building a product, feature, or website? 
-          Look no further! With my experience in coding and 
-          development, I can bring your vision to life. 
-          Check out my work and don't hesitate 
-          to contact me for your project needs. Let's get started today!
+          With half a decade of experience as an I.T training instructor/mentor and 3000+ hours experience in developing an efficient web application to a global standard. Strong skills in JavaScript, React, Redux, Node.js, Ruby on Rails, MongoDB, PostgreSQL, Git & GitHub among others. I can bring your vision to life. Get in touch with me today!
+
         </p>
         <div class="social-button">
           <ul>
-            <li>
+            <li class="socialBtn">
               <a href="https://github.com/Profsain"
                 ><img
                   src="asset/image/icons/github.png"
                   alt="github icon button"
               /></a>
             </li>
-            <li>
+            <li class="socialBtn">
               <a href="https://www.linkedin.com/in/profsain/"
                 ><img
                   src="asset/image/icons/linkedin.png"
                   alt="linkedin icon button"
               /></a>
             </li>
-            <li>
+            <li class="socialBtn">
               <a href="https://profsain.me"
                 ><img src="asset/image/icons/Vector.png" alt="like icon button"
               /></a>
             </li>
-            <li>
+            <li class="socialBtn">
               <a href="https://twitter.com/profsain"
                 ><img
                   src="asset/image/icons/twitter.png"
                   alt="twitter icon button"
               /></a>
             </li>
-            <li>
+            <li class="socialBtn">
               <a href="https://medium.com/@profsain"
                 ><img
                   src="asset/image/icons/medium.png"
@@ -118,14 +118,18 @@
            whether you need a complete overhaul or just a few updates. <br><br>
            I am ready to work with you to deliver the best possible solution 
            and strive to create websites that exceed your expectations 
-           and delight users. Contact me if you are in need of a web developer, 
-           I am eager to bring your vision to life.
+           and delight users. I've spent the last 15 months working remotely and asynchronously with people across 3 different time zones (UTC-6, UTC+1, UTC+5) which makes me way special. Looking for my next opportunities. 
         </p>
-        <!-- resume download -->
-        <a class="call-me primary-text" href="asset/resume.pdf" download>Get My Resume</a>
+        <div class="cta-container">
+          <!-- resume download -->
+          <a class="call-me primary-text" href="asset/resume.pdf" download>Get My Resume</a>
+          <!-- contact me -->
+          <a class="call-me contact-btn primary-text" href="#contactSection">Contact Me</a>
+
+        </div>
         
         <!-- languages and frameworks -->
-        <ul class="section-grid">
+        <ul class="section-grid skill-grid">
           <li class="section-card about-card">
             <div class="icon-holder">
               <img src="asset/image//icons/langauge.png" alt="langauge icons" />
@@ -181,7 +185,7 @@
         <div class="form-container">
           <div class="contact-intro">
             <p class="contact-intro-text primary-text">
-              I'm always interested in hearing about new projects, so if you'd
+              I'm always interested in hearing about new projects and opportunities, so if you'd
               like to chat please get in touch.
             </p>
           </div>
@@ -230,35 +234,35 @@
         <div class="footer">
           <div class="social-button">
             <ul>
-              <li>
+              <li class="socialBtn">
                 <a href="https://github.com/Profsain"
                   ><img
                     src="asset/image/icons/github.png"
                     alt="github icon button"
                 /></a>
               </li>
-              <li>
+              <li class="socialBtn">
                 <a href="https://www.linkedin.com/in/profsain/"
                   ><img
                     src="asset/image/icons/linkedin.png"
                     alt="linkedin icon button"
                 /></a>
               </li>
-              <li>
+              <li class="socialBtn">
                 <a href="https://profsain.me"
                   ><img
                     src="asset/image/icons/Vector.png"
                     alt="like icon button"
                 /></a>
               </li>
-              <li>
+              <li class="socialBtn">
                 <a href="https://twitter.com/profsain"
                   ><img
                     src="asset/image/icons/twitter.png"
                     alt="twitter icon button"
                 /></a>
               </li>
-              <li>
+              <li class="socialBtn">
                 <a href="https://medium.com/@profsain"
                   ><img
                     src="asset/image/icons/medium.png"
@@ -294,5 +298,8 @@
 
       <script src="asset/script/database.js"></script>
     <script src="asset/script/main.js"></script>
+
+    <!-- Bootstrap 5 js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
