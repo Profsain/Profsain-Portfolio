@@ -42,7 +42,7 @@ const database = [
     projectDescription: 'A mobile responsive clone of the Tin-Dog website. Build with HTML, CSS, and Bootstrap',
     featuredImage: 'https://i.postimg.cc/hPcvHYkw/tindog.png',
     technologies: ['Bootstrap', 'CSS', 'JavaScript', 'HTML'],
-    liveVersionUrl: 'https://profsain.github.io/Tin-Dog-Bootstrap_clone/',
+    liveVersionUrl: 'https://tindog-aqrr.onrender.com/',
     sourceCodeUrl: 'https://github.com/Profsain/Tin-Dog-Bootstrap_clone',
   },
   {

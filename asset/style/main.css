@@ -1,5 +1,9 @@
 
 /* My Style section  */
+html {
+  scroll-behavior: smooth;
+}
+
 .main-page {
   display: flex;
   flex-direction: column;
@@ -15,6 +19,12 @@
   font-weight: 300;
 }
 
+.cta-container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
 .call-me {
   font-size: 14px;
   font-weight: 900;
@@ -24,6 +34,19 @@
   background-color: #2a8e65;
   padding: 10px 16px;
   border-radius: 5px;
+}
+
+.contact-btn {
+  background-color: #fff;
+  color: #2a8e65;
+  border: 1px solid #2a8e65;
+  margin-left: 28px;
+}
+
+.contact-btn:hover {
+  background-color: #26825b;
+  color: #fff;
+  border: none;
 }
 
 /* portfolio modal style */
